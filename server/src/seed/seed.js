@@ -8,7 +8,7 @@ import Order from '../models/Order.js';
 import IndustryUpdate from '../models/IndustryUpdate.js';
 
 dotenv.config();
-
+// dummy data
 // Use faker for realistic random data
 import { faker } from '@faker-js/faker';
 
