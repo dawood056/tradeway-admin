@@ -1,0 +1,245 @@
+.forecasts-container {
+  padding: 2rem;
+  background-color: var(--bg-elevated);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+.forecasts-title {
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.forecasts-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cols-4 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.kpi-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px var(--shadow);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.kpi-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-value {
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-hint {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+select, button {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+select:hover, button:hover {
+  border-color: var(--border-strong);
+  background-color: var(--card-hover);
+}
+
+.chart-container {
+  background-color: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px var(--shadow);
+  border: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.forecast-details {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: var(--card);
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+.forecast-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.forecast-details-header h3 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 1.2rem;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge.primary {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem;
+  color: #5c6bc0;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.prediction-value {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.prediction-change {
+  font-weight: 600;
+}
+
+.prediction-change.positive {
+  color: #4caf50;
+}
+
+.prediction-change.negative {
+  color: #f44336;
+}
+
+.forecast-insights {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+}
+
+.insights-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.insights-icon {
+  font-size: 1.5rem;
+}
+
+.insights-header h3 {
+  margin: 0;
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+
+.insights-text {
+  color: #1976d2;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #5c6bc0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.input {
+  background-color: #ffffff;
+  border: 1px solid #c5cae9;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: #3949ab;
+  font-size: 0.9rem;
+  width: auto;
+  min-width: 200px;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3949ab;
+  box-shadow: 0 0 0 2px rgba(57, 73, 171, 0.1);
+}
+
+.input:hover {
+  border-color: #3949ab;
+}

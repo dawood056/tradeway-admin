@@ -1,0 +1,110 @@
+:root {
+  --primary: #0066FF;
+  --primary-light: #3384ff;
+  --primary-dark: #0052cc;
+  --background: #f8f9fa;
+  --text: #1a1a1a;
+  --text-light: #666;
+  --border: #e0e0e0;
+  --white: #ffffff;
+  --success: #4CAF50;
+  --error: #f44336;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 1rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+}
+
+.btn {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--primary-light);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text);
+}
+
+.btn.ghost:hover {
+  background: rgba(0, 102, 255, 0.05);
+  color: var(--primary);
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge.primary {
+  background: rgba(0, 102, 255, 0.1);
+  color: var(--primary);
+}
+
+.badge.success {
+  background: rgba(76, 175, 80, 0.1);
+  color: var(--success);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
